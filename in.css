@@ -1,0 +1,13 @@
+input{
+	height: 30px;
+	width:50px;
+
+}
+
+div{
+	height: 30px;
+	width:50px;
+	background-color: grey;
+	border-radius: 10px;
+
+}
