@@ -4,16 +4,38 @@ input{
 
 }
 
-#results{
-	height: 300px;
-	width:800px;
-	background-color: grey;
-	border-radius: 10px;
 
+
+div{
+	position:relative;
 }
 
 .result{
 
 	background-color: white;
-	border-radius: 10px;
+	margin: 20px;
+	display: inline-block;
+}
+
+	
+.inputBox {
+	width: 50px;
+}
+
+.indexSpan {
+	top: 5px;
+	left: -30px;
+
+}
+
+h1{
+	color:#2F4F4F;
+}
+
+h2{
+	color:#5F9EA0;
+}
+
+h3{
+	color: #778899
 }
