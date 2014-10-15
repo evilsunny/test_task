@@ -4,9 +4,25 @@ input{
 
 }
 
+<<<<<<< HEAD:in.css
 body{
 	margin: 20px;
 }
+=======
+body {
+    margin: 40px;
+}
+
+
+.answerBlock {
+    padding: 20px;
+    background: #f0ffeb;
+}
+
+.mistakeBlock {
+    padding: 20px;
+    background: #e8a9af;
+>>>>>>> 3d4c72fb771b09dabc106c9800102de9b5c1d208:css/in.css
 }
 
 div{

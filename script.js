@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	var colRow = 3;
 
+    $('#res').hide();
 		
 		 $("#res").hide();
 		 $("#end").hide();
@@ -259,7 +260,7 @@ $(document).ready(function(){
         function outResult(array)
         {
 
-        	var html='<table id = "resultArray">'
+        	var html='<table id = "resultArray" class="table table-bordered">'
         	for (var i = 0; i < array.length; i++) {
         		html+='<tr>';
         		html+='<td>'
@@ -283,7 +284,7 @@ $(document).ready(function(){
           			 {
                 		ss += matrix[i][j] * x[j];
                		 }
-            		ve[i] = ss - matrix[i][m];
+            		ve[i] = Math.abs(ss - matrix[i][m]);
             	}
             		return ve;
             		console.log(ve);
@@ -291,7 +292,7 @@ $(document).ready(function(){
 
         function outMistake(array)
         {
-        	var html='<table id = "mistakeArray">'
+        	var html='<table id = "mistakeArray" class="table table-bordered">'
         	for (var i = 0; i < array.length; i++) {
         		html+='<tr>';
         		html+='<td>'
