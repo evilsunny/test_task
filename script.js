@@ -173,7 +173,7 @@ $(document).ready(function(){
 		$("#results").append(html);	
 	}
 
-         var solve = function(matrix){
+        var solve = function(matrix){
        var x =[];
        var e = 0.0001;
         var n = matrix.length;
@@ -309,7 +309,7 @@ $(document).ready(function(){
         function inputP(){
         $('input').bind('keydown', function(e){
              console.log(e);
-			if((e.keyCode>=46 && e.keyCode<=58) || e.keyCode==9 || e.keyCode==190 || e.keyCode==8)
+			if((e.keyCode>=46 && e.keyCode<=58) ||(e.keyCode>=96 && e.keyCode<=105)|| e.keyCode==9 || e.keyCode==190 || e.keyCode==8|| e.keyCode==173|| e.keyCode==109)
 			 { return true; } else 
 			{ return false; } 
 		});  
