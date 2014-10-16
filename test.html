@@ -5,10 +5,10 @@
 	<title>Gauss Test</title>
 	<meta http-equiv="Content-Type"content="text/html; charset=UTF-8"/>
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="createResult.js"></script>
 	<script type="text/javascript" src="solve.js"></script>
 	<link rel="stylesheet" href="qunit-1.15.0.css" type="text/css" media="screen">
 	<script type="text/javascript" src="qunit-1.15.0.js"></script>
-	<script type="text/javascript" src="createResult.js"></script>
 	<script>
 	$(document).ready(function(){
 	test("solve()", function() {
@@ -16,6 +16,9 @@
 		ok(solve(matrix), [-1,-5,6]);
 		matrix = [[1,2,4],[2,4,5]];
 		equal(solve(matrix),-1,'No solve');
+		matrix = [[null,null,null],[null,null,null]];
+		equal(solve(matrix),-1,'Empty');
+
 	});
 	});
 	</script>
