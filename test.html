@@ -1,25 +1,33 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>Gauss</title>
-	<meta charset='utf-8'>
+	<title>Gauss Test</title>
+	<meta http-equiv="Content-Type"content="text/html; charset=UTF-8"/>
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
- 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
-	 <link href="css/styles.css" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="solve.js"></script>
-	<link rel="stylesheet" type="text/css" href="in.css">
-	<link rel="stylesheet" href="qunit.css" />
-	<script src="qunit.js"></script>
-	
-</head>
-
-<script>
-	
-	test("solve", function() {
-		var matrix = [[1,0,0,5],[0,1,0.6],[0,0,1,7]];
-		equal(solve(matrix), [5,6,7]);
+	<link rel="stylesheet" href="qunit-1.15.0.css" type="text/css" media="screen">
+	<script type="text/javascript" src="qunit-1.15.0.js"></script>
+	<script type="text/javascript" src="createResult.js"></script>
+	<script>
+	$(document).ready(function(){
+	test("solve()", function() {
+		var matrix = [[1,1,1,0],[8,4,6,8],[15,3,5,0]];
+		ok(solve(matrix), [-1,-5,6]);
 		matrix = [[1,2,4],[2,4,5]];
-		equal(solve(matrix),-1);
+		equal(solve(matrix),-1,'No solve');
 	});
-		</script>
+	});
+	</script>
+</head>	
+		
+		<body>
+
+  <h1 id="qunit-header">QUnit test env</h1>
+  <h2 id="qunit-banner"></h2>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests">
+  </ol>
+		</body>
+
+</html>
