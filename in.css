@@ -1,0 +1,53 @@
+input{
+	height: 30px;
+	width:50px;
+
+}
+
+body{
+	margin: 40px;
+}
+}
+
+div{
+	position:relative;
+}
+
+.result{
+
+	background-color: white;
+	margin: 20px;
+	display: inline-block;
+}
+
+	
+.inputBox {
+	width: 50px;
+}
+
+.indexSpan {
+	top: 5px;
+	left: -30px;
+}
+
+.answerBlock{
+	padding: 20px;
+	background: #f0ffeb;
+}
+
+.mistakeBlock{
+	padding: 20px;
+	background: #e8a9af;
+}
+
+h1{
+	color:#2F4F4F;
+}
+
+h2{
+	color:#5F9EA0;
+}
+
+h3{
+	color: #778899
+}
